@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Bumble Encounters Vote Viewer",
+  "version": "1.0.0",
+  "description": "Affiche has_user_voted et match_message pour le profil Bumble actuellement visible.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://bumble.com/*",
+        "https://*.bumble.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "page-hook.js"
+      ],
+      "matches": [
+        "https://bumble.com/*",
+        "https://*.bumble.com/*"
+      ]
+    }
+  ]
+}
