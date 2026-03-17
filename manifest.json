@@ -3,6 +3,9 @@
   "name": "Bumble Encounters Vote Viewer",
   "version": "1.0.0",
   "description": "Affiche has_user_voted et match_message pour le profil Bumble actuellement visible.",
+  "permissions": [
+    "storage"
+  ],
   "content_scripts": [
     {
       "matches": [
